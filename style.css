@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator {
+  width: 500px;
+  height: 840px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  border-radius: 50px;
+  margin-top: 1rem;
+  font-family: sans-serif;
+}
+
+.display {
+  /* background-color: rgb(211, 83, 23); */
+  width: 460px;
+  height: 250px;
+  display: flex;
+}
+
+.button {
+  color: rgb(241, 247, 247);
+  /* background-color: rgb(255, 81, 0); */
+  width: 440px;
+  height: 540px;
+  display: grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.buttons-ac,
+.buttons-mult,
+.buttons-div,
+.buttons-bölme,
+.buttons-7,
+.buttons-8,
+.buttons-9,
+.buttons-carpma,
+.buttons-4,
+.buttons-5,
+.buttons-6,
+.buttons-cikarma,
+.buttons-1,
+.buttons-2,
+.buttons-3,
+.buttons-toplama,
+.buttons-0,
+.buttons-nokta,
+.buttons-sonuc {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.buttons-ac,
+.buttons-mult,
+.buttons-div,
+.buttons-bölme,
+.buttons-7,
+.buttons-8,
+.buttons-9,
+.buttons-carpma,
+.buttons-4,
+.buttons-5,
+.buttons-6,
+.buttons-cikarma,
+.buttons-1,
+.buttons-2,
+.buttons-3,
+.buttons-toplama,
+.buttons-0,
+.buttons-nokta,
+.buttons-sonuc :hover {
+  background-color: #333;
+  color: rgb(248, 248, 247);
+  border: none;
+  cursor: pointer;
+}
+
+.buttons-bölme,
+.buttons-carpma,
+.buttons-cikarma,
+.buttons-toplama {
+  background-color: #f1a33c;
+}
+
+.buttons-0 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 220px;
+}
+
+.buttons-ac,
+.buttons-mult,
+.buttons-div {
+  background-color: #a5a5a5;
+  color: black;
+}
+.buttons-sonuc {
+  background-color: #333;
+}
+
+.button :hover {
+  opacity: 0.5;
+}
